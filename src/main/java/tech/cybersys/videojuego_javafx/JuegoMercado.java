@@ -14,7 +14,7 @@ public class JuegoMercado extends Application {
 
         Scene MenuPrincipal = new Scene(fxmlLoader.load(), 800, 600);
 
-        stage.setTitle("JuegoMercado");
+        stage.setTitle("Juego_Mercado");
         stage.setScene(MenuPrincipal);
         stage.show();
 
