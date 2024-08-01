@@ -20,7 +20,7 @@ public class VentanaPrincipalControlador {
 
     @FXML
     protected void onPantallaPersonajeClick(ActionEvent evt) throws IOException {
-
+      //Cambios agregados al código desde un ambiente remoto
     }
 
 }
