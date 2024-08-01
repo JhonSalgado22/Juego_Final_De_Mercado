@@ -1,5 +1,3 @@
-# Título del Proyecto: "Nombre del Videojuego"
-
 ## Descripción
 
 El videojuego "Nombre del Videojuego" es un emocionante juego de [género] en el que los jugadores [descripción del objetivo o mecánica del juego].
