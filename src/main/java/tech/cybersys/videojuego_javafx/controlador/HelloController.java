@@ -1,4 +1,4 @@
-package tech.cybersys.videojuego_javafx;
+package tech.cybersys.videojuego_javafx.controlador;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

@@ -13,4 +13,6 @@ module tech.cybersys.videojuego_javafx {
 
     opens tech.cybersys.videojuego_javafx to javafx.fxml;
     exports tech.cybersys.videojuego_javafx;
+    exports tech.cybersys.videojuego_javafx.controlador;
+    opens tech.cybersys.videojuego_javafx.controlador to javafx.fxml;
 }
