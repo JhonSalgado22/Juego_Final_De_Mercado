@@ -7,14 +7,17 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class JuegoMercado extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("vista/hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
+        FXMLLoader fxmlLoader = new FXMLLoader(JuegoMercado.class.getResource("vista/menu-view.fxml"));
+
+        Scene MenuPrincipal = new Scene(fxmlLoader.load(), 800, 600);
+
+        stage.setTitle("JuegoMercado");
+        stage.setScene(MenuPrincipal);
         stage.show();
+
     }
 
     public static void main(String[] args) {
