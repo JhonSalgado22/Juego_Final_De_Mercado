@@ -1,12 +1,11 @@
 package tech.cybersys.videojuego_javafx.controlador;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 import java.io.IOException;
 
-public class VentanaPrincipalControlador {
+public class ControladorMenu {
     @FXML
     private Label Label_Mensaje_Bienvenida;
 
@@ -19,7 +18,7 @@ public class VentanaPrincipalControlador {
     }
 
     @FXML
-    protected void onPantallaPersonajeClick(ActionEvent evt) throws IOException {
+    protected void onPantallaPersonajeClick() throws IOException {
       //Cambios agregados al código desde un ambiente remoto
     }
 
