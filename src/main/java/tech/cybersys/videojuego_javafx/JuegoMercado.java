@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class JuegoMercado extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws  IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(JuegoMercado.class.getResource("vista/menu-view.fxml"));
 
         Scene MenuPrincipal = new Scene(fxmlLoader.load(), 800, 600);

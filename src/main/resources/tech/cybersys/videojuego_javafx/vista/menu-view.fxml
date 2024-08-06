@@ -11,15 +11,14 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.cybersys.videojuego_javafx.controlador.ControladorMenu">
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
          <image>
             <Image url="@../../../../imagenes/logo_principal_juegomercado.jpeg" />
          </image>
       </ImageView>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="465.0" layoutY="86.0" mnemonicParsing="false" text="Iniciar Juego" textAlignment="CENTER">
+      <Button fx:id="botonIniciar" alignment="CENTER" contentDisplay="CENTER" layoutX="465.0" layoutY="86.0" mnemonicParsing="false" onAction="#BotonInicio" text="Iniciar Juego" textAlignment="CENTER">
          <font>
             <Font name="Consolas Bold" size="36.0" />
          </font>
