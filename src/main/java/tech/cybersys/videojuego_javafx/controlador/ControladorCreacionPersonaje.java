@@ -1,21 +1,46 @@
 package tech.cybersys.videojuego_javafx.controlador;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TabPane;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import tech.cybersys.videojuego_javafx.modelo.Builder.ComercianteBuilder;
+import tech.cybersys.videojuego_javafx.modelo.Builder.PersonajeBuilder;
 import tech.cybersys.videojuego_javafx.modelo.Director;
 import tech.cybersys.videojuego_javafx.modelo.Personaje;
 
+import java.io.IOException;
+
 public class ControladorCreacionPersonaje {
-    private Director director;
 
-    public ControladorCreacionPersonaje() {
-        this.director = new Director();
+    @FXML private TabPane TablaPestanas;
+    @FXML private TextArea CampoHistoria;
+    @FXML private TextField CampoNombre;
+    @FXML private Label EtiquetaErrorNombre;
+
+    Personaje comerciante1;
+    private ComercianteBuilder ComercianteBuilder;
+
+    @FXML
+    public void MostrarAtributosComerciante() throws IOException {
+        if(CampoNombre.equals("")){
+            EtiquetaErrorNombre.setVisible(true);
+        }else{
+            EtiquetaErrorNombre.setVisible(false);
+            Director director = new Director();
+            director.setBuilder(ComercianteBuilder);
+            comerciante1 = director.construirComerciante(CampoNombre.toString());
+            TablaPestanas.setVisible(true);
+            CampoHistoria.setText(comerciante1.getHistoria());
+        }
+
+
+
     }
 
-    public Personaje crearComerciante(String nombre) {
-        ComercianteBuilder comercianteBuilder = new ComercianteBuilder();
-        director.setBuilder(comercianteBuilder);
-        return director.construirPersonaje(nombre);
-    }
+
 
 //    public Personaje crearAgricultor(String nombre) {
 //        AgricultorBuilder agricultorBuilder = new AgricultorBuilder();

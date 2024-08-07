@@ -2,6 +2,7 @@ package tech.cybersys.videojuego_javafx.modelo;
 
 public class Personaje {
     private String nombre;
+    private String historia;
     private int salud;
     private int fuerza;
     private int inteligencia;
@@ -30,9 +31,14 @@ public class Personaje {
         return clase;
     }
 
+    public String getHistoria() {
+        return historia;
+    }
+
     // Clase interna estática Builder
     public static class Builder {
         private String nombre;
+        private String historia;
         private int salud;
         private int fuerza;
         private int inteligencia;
@@ -63,16 +69,23 @@ public class Personaje {
             this.clase = clase;
             return this;
         }
+        public Builder setHistoria(String historia) {
+            this.historia = historia;
+            return this;
+        }
 
         // Método build que crea una instancia de Personaje con los atributos configurados
         public Personaje build() {
             Personaje personaje = new Personaje();
             personaje.nombre = this.nombre;
+            personaje.historia = this.historia;
             personaje.salud = this.salud;
             personaje.fuerza = this.fuerza;
             personaje.inteligencia = this.inteligencia;
             personaje.clase = this.clase;
             return personaje;
         }
+
+
     }
 }
