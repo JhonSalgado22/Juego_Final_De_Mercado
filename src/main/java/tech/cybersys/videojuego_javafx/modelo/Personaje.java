@@ -3,10 +3,11 @@ package tech.cybersys.videojuego_javafx.modelo;
 public class Personaje {
     private String nombre;
     private String historia;
-    private int salud;
-    private int fuerza;
-    private int inteligencia;
+    private String salud;
+    private String fuerza;
+    private String inteligencia;
     private String clase;
+    private String dinero;
 
     private Personaje() {}
 
@@ -15,15 +16,15 @@ public class Personaje {
         return nombre;
     }
 
-    public int getSalud() {
+    public String getSalud() {
         return salud;
     }
 
-    public int getFuerza() {
+    public String getFuerza() {
         return fuerza;
     }
 
-    public int getInteligencia() {
+    public String getInteligencia() {
         return inteligencia;
     }
 
@@ -35,14 +36,19 @@ public class Personaje {
         return historia;
     }
 
+    public String getDinero() {
+        return dinero;
+    }
+
     // Clase interna estática Builder
     public static class Builder {
         private String nombre;
         private String historia;
-        private int salud;
-        private int fuerza;
-        private int inteligencia;
+        private String salud;
+        private String fuerza;
+        private String inteligencia;
         private String clase;
+        private String dinero;
 
         // Métodos de construcción que devuelven el Builder para encadenamiento
         public Builder setNombre(String nombre) {
@@ -50,17 +56,17 @@ public class Personaje {
             return this;
         }
 
-        public Builder setSalud(int salud) {
+        public Builder setSalud(String salud) {
             this.salud = salud;
             return this;
         }
 
-        public Builder setFuerza(int fuerza) {
+        public Builder setFuerza(String fuerza) {
             this.fuerza = fuerza;
             return this;
         }
 
-        public Builder setInteligencia(int inteligencia) {
+        public Builder setInteligencia(String inteligencia) {
             this.inteligencia = inteligencia;
             return this;
         }
@@ -73,6 +79,10 @@ public class Personaje {
             this.historia = historia;
             return this;
         }
+        public Builder setDinero(String dinero) {
+            this.dinero = dinero;
+            return this;
+        }
 
         // Método build que crea una instancia de Personaje con los atributos configurados
         public Personaje build() {
@@ -83,8 +93,10 @@ public class Personaje {
             personaje.fuerza = this.fuerza;
             personaje.inteligencia = this.inteligencia;
             personaje.clase = this.clase;
+            personaje.dinero = this.dinero;
             return personaje;
         }
+
 
 
     }

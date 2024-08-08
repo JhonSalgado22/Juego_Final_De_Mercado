@@ -30,17 +30,17 @@ public class ComercianteBuilder implements PersonajeBuilder {
 
     @Override
     public void buildSalud() {
-        builder.setSalud(80);
+        builder.setSalud("80");
     }
 
     @Override
     public void buildFuerza() {
-        builder.setFuerza(50);
+        builder.setFuerza("50");
     }
 
     @Override
     public void buildInteligencia() {
-        builder.setInteligencia(90);
+        builder.setInteligencia("90");
     }
 
     @Override
