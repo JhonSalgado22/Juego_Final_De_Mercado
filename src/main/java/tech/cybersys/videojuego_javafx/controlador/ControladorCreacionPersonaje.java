@@ -3,6 +3,7 @@ package tech.cybersys.videojuego_javafx.controlador;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import tech.cybersys.videojuego_javafx.modelo.Builder.PersonajeBuilder;
 import tech.cybersys.videojuego_javafx.modelo.Personaje;
 import tech.cybersys.videojuego_javafx.modelo.PersonajeDAO;
 import tech.cybersys.videojuego_javafx.modelo.PersonajeDAOImpl;
@@ -66,6 +67,13 @@ public class ControladorCreacionPersonaje {
        PersonajeDAO personajeDAO = new PersonajeDAOImpl();
        personajeDAO.guardarPersonaje(PersonajeGuardado);
         mostrarVentana(event, null, "Juego-view.fxml", "Pantalla de Juego");
+   }
+
+   @FXML
+    public void CargarPersonaje(String nombre) throws IOException {
+        Personaje personaje1;
+        PersonajeDAO personajedao = new PersonajeDAOImpl();
+        personaje1 = personajedao.cargarPersonaje(nombre);
    }
 
 
