@@ -20,20 +20,24 @@ public class ControladorCreacionPersonaje {
     @FXML private TextField CampoNombre;
     @FXML private Label EtiquetaErrorNombre;
 
-    Personaje comerciante1;
-    private ComercianteBuilder ComercianteBuilder;
+
 
     @FXML
     public void MostrarAtributosComerciante() throws IOException {
-        if(CampoNombre.equals("")){
+        if(CampoNombre.getText().equals("")){
             EtiquetaErrorNombre.setVisible(true);
         }else{
             EtiquetaErrorNombre.setVisible(false);
-            Director director = new Director();
-            director.setBuilder(ComercianteBuilder);
-            comerciante1 = director.construirComerciante(CampoNombre.toString());
             TablaPestanas.setVisible(true);
-            CampoHistoria.setText(comerciante1.getHistoria());
+            Personaje personaje1 = new Personaje.Builder()
+                    .setClase("Soldado")
+                    .setFuerza(50)
+                    .setHistoria("Una historia muy muy triste")
+                    .setInteligencia(55)
+                    .setSalud(200)
+                    .setNombre("Carlos")
+                    .build();
+            CampoHistoria.setText(personaje1.getHistoria());
         }
 
 
