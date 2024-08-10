@@ -16,7 +16,7 @@
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../imagenes/logo_principal_juegomercado.jpeg" />
+            <Image url="@../../../../imagenes/OIG3.jpeg" />
          </image>
       </ImageView>
       <Button fx:id="botonIniciar" alignment="CENTER" contentDisplay="CENTER" layoutX="465.0" layoutY="86.0" mnemonicParsing="false" onAction="#BotonInicio" text="Iniciar Juego" textAlignment="CENTER">

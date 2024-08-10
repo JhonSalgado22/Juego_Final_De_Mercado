@@ -18,7 +18,7 @@
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../imagenes/_79a28867-8c2e-41ae-a45a-0c121b999517.jpeg" />
+            <Image url="@../../../../imagenes/OIG3%20(1).jpeg" />
          </image>
       </ImageView>
       <Label layoutX="134.0" layoutY="14.0" text="Creacion de Personaje" textAlignment="CENTER" textFill="WHITE">
@@ -46,29 +46,26 @@
          </effect>
       </Label>
       <TextField fx:id="CampoNombre" layoutX="214.0" layoutY="79.0" prefHeight="54.0" prefWidth="347.0" />
-      <ImageView fx:id="PersonajeComerciante" fitHeight="67.0" fitWidth="126.0" layoutX="217.0" layoutY="267.0" onMouseClicked="#MostrarAtributosComerciante" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0">
+      <ImageView fx:id="PersonajeAgricultor" fitHeight="67.0" fitWidth="126.0" layoutX="382.0" layoutY="267.0" onMouseClicked="#MostrarAtributosAgricultor" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0">
          <image>
-            <Image url="@../../../../imagenes/comerciante_parado.png" />
+            <Image url="@../../../../imagenes/th-removebg-preview.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fx:id="PersonajeAgricultor" fitHeight="67.0" fitWidth="126.0" layoutX="382.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0">
+      <ImageView fx:id="PersonajeSoldado" fitHeight="67.0" fitWidth="126.0" layoutX="531.0" layoutY="267.0" onMouseClicked="#MostrarAtributosSoldado" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0">
          <image>
-            <Image url="@../../../../imagenes/granjero_parado.png" />
+            <Image url="@../../../../imagenes/pngtree-cartoon-soldier-army-clipart-png-image_5716362-removebg-preview.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fx:id="PersonajeSoldado" fitHeight="67.0" fitWidth="126.0" layoutX="531.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="159.0" layoutY="213.0" onMouseClicked="#MostrarAtributosComerciante" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../imagenes/soldado_parado.png" />
+            <Image url="@../../../../imagenes/th-removebg-preview%20(1).png" />
          </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
       </ImageView>
       <Label layoutX="152.0" layoutY="360.0" text="Comerciante" textAlignment="CENTER" textFill="WHITE">
          <font>

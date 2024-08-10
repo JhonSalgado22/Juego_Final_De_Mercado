@@ -1,1 +1,4 @@
 Carlos,200,50,55,1000,Comerciante
+Rene,200,50,55,1000,Comerciante
+Joni,1000,500,500,1000,Agricultor
+Jonathan,400,900,300,100,Soldado
